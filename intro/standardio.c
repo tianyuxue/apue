@@ -5,7 +5,7 @@ int main(void)
     int c;
     while ((c = getc(stdin) != EOF))
     {
-        if (putc(c) == EOF)
+        if (putc(c, stdout) == EOF)
         {
             err_sys("output error");
         }
@@ -15,5 +15,5 @@ int main(void)
     {
         err_sys("input error");
     }
-    exit(0)
+    exit(0);
 }
