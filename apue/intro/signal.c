@@ -24,7 +24,7 @@ int main(void)
 
         if ((pid = fork()) < 0)
         {
-            err_sys("fork error")
+            err_sys("fork error");
         }
         else if (pid == 0)
         {
